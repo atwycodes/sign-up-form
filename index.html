@@ -8,6 +8,7 @@
         href="style.css">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Roboto">
+    <script src="script.js" defer></script>
     <title>Sign-Up Form</title>
 </head>
 <body>
@@ -16,36 +17,65 @@
             <div class="logo"><img src="/pics/turner-logo.png" alt=""></div>
         </div>
         <div class="right-side">
-            <p class="title">This is not a real online service. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna porttitor rhoncus dolor purus non enim. Bibendum est ultricies integer quis auctor elit. Blandit massa enim nec dui nunc mattis enim ut. Nisi porta lorem mollis aliquam. Tempus imperdiet nulla malesuada pellentesque elit eget. </p>
+            <p class="title">This is not a real online service. Credit to Turner Construction for the logo & <a href="https://unsplash.com/@naefu">@naefu</a> for the picture of Merdeka 118. </p>
             <p class="cta">Sign up now!</p>
             <form action="">
                 <fieldset>
                     <div class="inputs">
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name" name="first-name">
+                        <label for="first-name">* FIRST NAME</label>
+                        <input 
+                        type="text" 
+                        id="first-name" 
+                        name="first-name" 
+                        required>
                     </div>
                     <div class="inputs">
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name" name="last-name">
+                        <label for="last-name">* LAST NAME</label>
+                        <input 
+                        type="text" 
+                        id="last-name" 
+                        name="last-name" 
+                        required>
                     </div>
                     <div class="inputs">
-                        <label for="user-email">EMAIL</label>
-                        <input type="email" id="user-email" name="user-email">
+                        <label for="user-email">* EMAIL</label>
+                        <input 
+                        type="email" 
+                        id="user-email" 
+                        name="user-email" 
+                        required>
                     </div>
                     <div class="inputs">
-                        <label for="user-number">PHONE NUMBER</label>
-                        <input type="text" id="user-number" name="user-number">
+                        <label for="user-number">* PHONE NUMBER</label>
+                        <input 
+                        type="text" 
+                        id="user-number" 
+                        name="user-number" 
+                        required>
                     </div>
                     <div class="inputs">
-                        <label for="user-password">PASSWORD</label>
-                        <input type="password" id="user-password" name="user-password">
+                        <label for="user-password">* PASSWORD</label>
+                        <input 
+                        type="password" 
+                        id="user-password" 
+                        name="user-password"
+                        minlength="8"
+                        maxlength="24"  
+                        required>
+                        <span ></span>
                     </div>
                     <div class="inputs">
-                        <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm-password" name="confirm-password">
+                        <label for="confirm-password">* CONFIRM PASSWORD</label>
+                        <input 
+                        type="password" 
+                        id="confirm-password" 
+                        name="confirm-password"
+                        minlength="8"
+                        maxlength="24" 
+                        required>
                     </div>
                 </fieldset>
-                <button type="reset">Create Account</button>
+                <button class="submit-btn">Create Account</button>
             </form>
         </div>
     </div>
