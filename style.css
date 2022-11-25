@@ -65,7 +65,8 @@ img {
     color: var()
 }
 
-p {
+.title,
+.cta {
     font-weight: 900;
     font-size: 1.2rem;
     color: var(--title-font);
@@ -156,4 +157,10 @@ button:hover {
     background-color: var(--hover-button-color);
     color: var(--hover-button-font);
     border: solid 3px var(--hover-button-font);
+}
+
+.login {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: var(--title-font);
 }
