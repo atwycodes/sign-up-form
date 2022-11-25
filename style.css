@@ -28,7 +28,7 @@ body {
 
 .background-image {    
     background-color: aqua;
-    background-image: url(pics/merdeka-118.jpg);
+    background-image: url(./pics/merdeka-118.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
